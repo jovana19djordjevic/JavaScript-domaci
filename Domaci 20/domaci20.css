@@ -1,0 +1,54 @@
+#mealHolder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.mealImg {
+	width: 320px;
+	margin: 10px;
+}
+
+#popup {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#innerPopup {
+	margin-top: 20px;
+	width: 50%;
+	max-height: 80vh;
+	background-color: white;
+	padding: 10px;
+}
+
+.imgCoctails {
+	width: 100%;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 4px;
+	overflow: auto;
+}
+
+#randomCoctails {
+	margin: 10px;
+	width: 100%;
+	gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.drinkDiv {
+	height: 250px;
+	border: 1px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+}
