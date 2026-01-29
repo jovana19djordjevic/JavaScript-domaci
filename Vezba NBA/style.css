@@ -1,0 +1,83 @@
+#playersDiv {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 16px;
+	margin-top: 20px;
+}
+
+#playersDiv div {
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 10px;
+	padding: 16px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+#playersDiv div:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#playersDiv h2 {
+	margin: 4px 0;
+	font-size: 18px;
+	color: #222;
+}
+
+#playersDiv h5 {
+	margin: 2px 0;
+	font-size: 14px;
+	color: #666;
+}
+
+#popup {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#contentPopup {
+	background: white;
+	padding: 20px;
+	border-radius: 12px;
+}
+
+.playerCard {
+	cursor: pointer;
+}
+
+.popupImg {
+	max-width: 600px;
+	max-height: 500px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+.loader {
+	width: 50px;
+	height: 50px;
+	border: 5px solid #e0e0e0;
+	border-top: 5px solid #00c2d6;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	margin: auto;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
