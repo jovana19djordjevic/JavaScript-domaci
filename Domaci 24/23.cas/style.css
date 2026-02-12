@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: grey;
+	padding: 20px;
+	text-align: center;
+}
+
+button {
+	background: #4caf50;
+	color: #fff;
+	border: none;
+	padding: 10px 14px;
+	margin: 5px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+#foreCast {
+	max-width: 420px;
+	margin: 18px auto;
+}
+
+.section {
+	background: #fff;
+	border-radius: 12px;
+	padding: 16px;
+	margin-bottom: 14px;
+	border: 1px solid #e6e6e6;
+}
+
+.section h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.temp {
+	font-size: 34px;
+	font-weight: bold;
+	margin: 6px 0;
+}
+
+.section p {
+	margin: 6px 0;
+	color: #333;
+}
+
+/* 3 dana grid */
+.days {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.day {
+	background: #f7f7f7;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.day p {
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+/* responsive: na uskom ekranu */
+@media (max-width: 420px) {
+	.days {
+		flex-direction: column;
+	}
+}
